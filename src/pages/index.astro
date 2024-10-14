@@ -1,0 +1,70 @@
+---
+import Html from "../components/icons/html.astro";
+import Layout from "../layouts/Layout.astro";
+import Githubicon from "../components/icons/GithubIcon.astro";
+import Linkidin from "../components/icons/Linkidin.astro";
+import Badges from "../components/badges.astro";
+import TimeLines from "../components/TimeLines.astro";
+import CardLingual from "../components/CardLingual.astro";
+import CardThessa from "../components/CardThessa.astro";
+---
+
+<Layout title="Bienvenido a mi Portafolio">
+  <main>
+    <section class="lg:w-[740px] pt-20 max-sm:pt-20 justify-start max-sm:px-20">
+      <img class="h-12" src="/src/images/brandVicDev.webp" alt="" />
+      <div class="flex text-center gap-5 justify-start items-center">
+        <h1 class="text-4xl text-white font-bold text-left">
+          ¡Hola! Soy Víctor
+        </h1>
+      </div>
+
+      <h2 class="text-2xl text-white font-extralight text-pretty">
+        Soy un desarrollador web con 4 años de experiencia, especializado en la
+        creación de páginas web utilizando WordPress, <span
+          class="text-[#E85125]">HTML</span
+        > ,<span class="text-[#1579B8]"> CSS </span> y <span
+          class="text-amber-500">JS</span
+        >. Me enfoco en desarrollar sitios funcionales y atractivos, asegurando
+        una experiencia de usuario fluida y adaptada a las necesidades de cada
+        cliente.
+      </h2>
+      <div class="flex gap-10 pt-5">
+        <Badges>
+          <Githubicon />
+        </Badges>
+        <Badges>
+          <Linkidin />
+        </Badges>
+        <a
+          class="border-2 border-yellow-500 h-8 rounded-md p-1 text-white ml-6"
+          href="">Disponible para trabajar</a
+        >
+      </div>
+      <div class="pt-8 pb-10">
+        <h1 class="pb-10 text-4xl font-bold text-white" id="experiencia">
+          Experiencia Laboral
+        </h1>
+        <TimeLines />
+      </div>
+      <div>
+        <h1 class="pb-10 text-4xl font-bold text-white" id="proyectos">
+          Proyectos
+        </h1>
+      </div>
+      <div class="pt-2 pb-12">
+        <CardLingual />
+      </div>
+      <div>
+        <CardThessa />
+      </div>
+      <div class=" flex max-sm:flex-col max-sm:items-center pt-20" id="sobremi">
+        <img class="size-80 rounded-lg pr-2" src="/src/images/194268475_3706095642828316_76750646946749550_n.jpg" alt="">
+        <div> <h1 class="text-4xl text-white text-bold pt-10">Sobre mí</h1>
+            <p class="text-base text-white">Soy Víctor García, soy de México   y a los 20 años, formé parte de una StartUp llamada Party App, que aunque ya no está en funcionamiento, me brindó una valiosa experiencia. Aprendí a usar WordPress para implementar un E-commerce y utilicé Elementor para diseñar la página web. Con el tiempo, descubrí que me encantaba este mundo del desarrollo, lo que me llevó a profundizar en el Front End. Ahora, quiero seguir creciendo y aportar mis conocimientos para crear soluciones innovadoras. 
+            </p> </div>
+        
+      </div>
+    </section>
+  </main>
+</Layout>
