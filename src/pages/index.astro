@@ -10,15 +10,14 @@ import CardThessa from "../components/CardThessa.astro";
 ---
 
 <Layout title="Bienvenido a mi Portafolio">
-  <main>
-    <section class="lg:w-[740px] pt-20 max-sm:pt-20 justify-start max-sm:px-20">
-      <img class="h-12" src="/src/images/brandVicDev.webp" alt="" />
-      <div class="flex text-center gap-5 justify-start items-center">
-        <h1 class="text-4xl text-white font-bold text-left">
-          ¡Hola! Soy Víctor
-        </h1>
-      </div>
-
+  <main class="lg:w-[740px] pt-20  justify-start">
+    <section >
+      <div class="flex max-md:px-10">
+        <div class="text-center gap-5 justify-start items-center">
+          <h1 class="text-4xl text-white font-bold text-left">
+            ¡Hola! Soy Víctor
+          </h1>
+          <img class="h-12" src="/src/images/brandVicDev.webp" alt="" />
       <h2 class="text-2xl text-white font-extralight text-pretty">
         Soy un desarrollador web con 4 años de experiencia, especializado en la
         creación de páginas web utilizando WordPress, <span
@@ -29,6 +28,9 @@ import CardThessa from "../components/CardThessa.astro";
         una experiencia de usuario fluida y adaptada a las necesidades de cada
         cliente.
       </h2>
+        </div>
+      </div>
+      
       <div class="flex gap-10 pt-5">
         <Badges>
           <Githubicon />
