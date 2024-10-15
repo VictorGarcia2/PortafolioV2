@@ -10,27 +10,26 @@ import CardThessa from "../components/CardThessa.astro";
 ---
 
 <Layout title="Bienvenido a mi Portafolio">
-  <main class="lg:w-[740px] pt-20  justify-start">
-    <section >
+  <main class="lg:w-[740px] pt-20 justify-start">
+    <section>
       <div class="flex max-md:px-10">
         <div class="text-center gap-5 justify-start items-center">
           <img class="h-12" src="images/brandvicdev.webp" alt="" />
           <h1 class="text-4xl text-white font-bold text-left">
             ¡Hola! Soy Víctor
           </h1>
-          
-      <h2 class="text-2xl text-white font-extralight text-pretty">
-        Soy un desarrollador web con 4 años de experiencia, especializado en la
-        creación de páginas web utilizando WordPress, <span
-          class="text-[#E85125]">HTML</span
-        > ,<span class="text-[#1579B8]"> CSS </span> y <span
-          class="text-amber-500">JS</span
-        >. Me enfoco en desarrollar sitios funcionales y atractivos, asegurando
-        una experiencia de usuario fluida y adaptada a las necesidades de cada
-        cliente.
-      </h2>
+
+          <h2 class="text-2xl text-white font-extralight text-pretty">
+            Soy un desarrollador web con 4 años de experiencia, especializado en
+            la creación de páginas web utilizando WordPress, <span
+              class="text-[#E85125]">HTML</span
+            > ,<span class="text-[#1579B8]"> CSS </span> y <span
+              class="text-amber-500">JS</span
+            >. Me enfoco en desarrollar sitios funcionales y atractivos,
+            asegurando una experiencia de usuario fluida y adaptada a las
+            necesidades de cada cliente.
+          </h2>
         </div>
-        
       </div>
       <div class="flex gap-10 pt-5 max-md:px-10">
         <Badges>
@@ -50,7 +49,7 @@ import CardThessa from "../components/CardThessa.astro";
         </h1>
         <TimeLines />
       </div>
-      <div>
+      <div class="max-md:px-10">
         <h1 class="pb-10 text-4xl font-bold text-white" id="proyectos">
           Proyectos
         </h1>
@@ -61,12 +60,25 @@ import CardThessa from "../components/CardThessa.astro";
       <div>
         <CardThessa />
       </div>
-      <div class=" flex max-sm:flex-col max-sm:items-center pt-20" id="sobremi">
-        <img class="size-80 rounded-lg pr-2" src="images/retratovictor.jpg" alt="">
-        <div> <h1 class="text-4xl text-white text-bold pt-10">Sobre mí</h1>
-            <p class="text-base text-white">Soy Víctor García, soy de México   y a los 20 años, formé parte de una StartUp llamada Party App, que aunque ya no está en funcionamiento, me brindó una valiosa experiencia. Aprendí a usar WordPress para implementar un E-commerce y utilicé Elementor para diseñar la página web. Con el tiempo, descubrí que me encantaba este mundo del desarrollo, lo que me llevó a profundizar en el Front End. Ahora, quiero seguir creciendo y aportar mis conocimientos para crear soluciones innovadoras. 
-            </p> </div>
-        
+      <div class="flex max-sm:flex-col max-sm:items-center pt-20" id="sobremi">
+        <img
+          class="size-80 rounded-lg pr-2"
+          src="images/retratovictor.jpg"
+          alt=""
+        />
+        <div class="max-md:px-10">
+          <h1 class="text-4xl text-white text-bold pt-10">Sobre mí</h1>
+          <p class="text-base text-white">
+            Soy Víctor García, soy de México y a los 20 años, formé parte de una
+            StartUp llamada Party App, que aunque ya no está en funcionamiento,
+            me brindó una valiosa experiencia. Aprendí a usar WordPress para
+            implementar un E-commerce y utilicé Elementor para diseñar la página
+            web. Con el tiempo, descubrí que me encantaba este mundo del
+            desarrollo, lo que me llevó a profundizar en el Front End. Ahora,
+            quiero seguir creciendo y aportar mis conocimientos para crear
+            soluciones innovadoras.
+          </p>
+        </div>
       </div>
     </section>
   </main>
