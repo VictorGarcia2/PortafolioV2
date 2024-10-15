@@ -8,8 +8,6 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
   integrations: [tailwind()],
 
-  vite: {
-    assetsInclude: ['**/*.jpg', '**/*.png, **/*.webp'],  // Incluir imágenes
-  }
+ 
 
 });
