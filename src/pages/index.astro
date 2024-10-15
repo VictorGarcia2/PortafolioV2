@@ -12,7 +12,7 @@ import CardThessa from "../components/CardThessa.astro";
 <Layout title="Bienvenido a mi Portafolio">
   <main class="lg:w-[740px] pt-20 justify-start">
     <section>
-      <div class="flex max-md:px-10">
+      <div class="flex max-md:px-10" id="inicio">
         <div class="text-center gap-5 justify-start items-center">
           <img class="h-12" src="images/brandvicdev.webp" alt="" />
           <h1 class="text-4xl text-white font-bold text-left">
@@ -38,10 +38,11 @@ import CardThessa from "../components/CardThessa.astro";
         <Badges>
           <Linkidin />
         </Badges>
-        <a
-          class="border-2 border-yellow-500 h-8 rounded-md p-1 text-white ml-6"
+        <div class="border-2 border-yellow-500 h-auto rounded-md p-1"> <a
+          class=" text-white ml-6"
           href="">Disponible para trabajar</a
-        >
+        > </div>
+        
       </div>
       <div class="pt-8 pb-10 max-md:px-10">
         <h1 class="pb-10 text-4xl font-bold text-white" id="experiencia">
