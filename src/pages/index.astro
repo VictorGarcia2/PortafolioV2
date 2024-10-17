@@ -7,76 +7,16 @@ import Badges from "../components/badges.astro";
 import TimeLines from "../components/TimeLines.astro";
 import CardLingual from "../components/CardLingual.astro";
 import CardThessa from "../components/CardThessa.astro";
+import Section1 from "../components/sections/section-1.astro";
+import Section2 from "../components/sections/section-2.astro";
+import Section3 from "../components/sections/section-3.astro";
+import Section4 from "../components/sections/section-4.astro";
 ---
 <Layout title="Programador Web en villahermosa">
-  <main class="lg:w-[740px] pt-20 ">
-    <section>
-      <div class="flex max-md:px-10 md:px-10" id="inicio">
-        <div class="text-center gap-5 justify-start items-center">
-          <img class="h-12 animate-wiggle animate-duration-1000 animate-ease-in-out" src="images/brandvicdev.webp" alt="" />
-          <h1 class="text-4xl text-white font-bold text-left animate-fade-right animate-delay-800">
-            ¡Hola! Soy Víctor
-          </h1>
-
-          <h2 class="text-2xl text-left text-white font-extralight text-pretty animate-fade-right animate-delay-800 ">
-            Soy un desarrollador web con 4 años de experiencia, especializado en
-            la creación de páginas web utilizando WordPress, <span
-              class="text-[#E85125]">HTML</span
-            > ,<span class="text-[#1579B8]"> CSS </span> y <span
-              class="text-amber-500">JS</span
-            >. Me enfoco en desarrollar sitios funcionales y atractivos,
-            asegurando una experiencia de usuario fluida y adaptada a las
-            necesidades de cada cliente.
-          </h2>
-        </div>
-      </div>
-      <div class="flex gap-10 pt-5 max-md:px-10 md:px-10 animate-fade-down animate-delay-800">
-        <Badges>
-          <Githubicon />
-        </Badges>
-        <Badges>
-          <Linkidin />
-        </Badges>
-        <div class="border-2 border-yellow-500 h-auto rounded-md p-1 animate-bounce animate-delay-700 text-center"> 
-          <a class="text-white"
-          href="mailto:victrgarciaphoto@gmail.com">Disponible para trabajar 
-        </a></div>
-      </div>
-      <div class="pt-8 pb-10 max-sm:px-10  md:px-10 animate-fade-right h-full">
-        <h1 class="pb-10 text-4xl font-bold text-white" id="experiencia">
-          Experiencia Laboral
-        </h1>
-        <TimeLines />
-      </div>
-      <div class="max-md:px-10 md:px-10">
-        <h1 class="pb-10 text-4xl font-bold text-white" id="proyectos">
-          Proyectos
-        </h1>
-      </div>
-      <div class=" w-full max-md:px-10 md:flex md:px-10" >
-          <CardLingual/>
-          <CardThessa/>
-      </div>
-      <div class="flex max-sm:flex-col max-sm:items-center pt-32 md:px-10" id="sobremi">
-        <img
-          class="size-80 rounded-3xl pr-2"
-          src="images/retratovictor.jpg"
-          alt=""
-        />
-        <div class="max-md:px-10 pb-20">
-          <h1 class="text-4xl text-white text-bold">Sobre mí</h1>
-          <p class="text-base text-white">
-            Soy Víctor García, tengo 24 años y soy de México. 
-            A los 20 años formé parte de una StartUp llamada <span class="text-pink-400">Party App</span>, que, 
-            aunque ya no está en funcionamiento, me brindó una valiosa <span class="text-green-500">experiencia </span>. 
-            Aprendí a utilizar WordPress para implementar un E-commerce y usé Elementor 
-            para diseñar la página web. Con el tiempo, descubrí mi pasión por el desarrollo, 
-            lo que me llevó a profundizar en el Front End. Ahora, quiero seguir creciendo y aportar 
-            mis conocimientos para crear soluciones innovadoras.
-          </p>
-        </div>
-      </div>
-      <div></div>
-    </section>
+  <main class="lg:w-[740px] pt-20">
+    <Section1/>
+    <Section2/>
+    <Section3/>
+    <Section4/>
   </main>
 </Layout>

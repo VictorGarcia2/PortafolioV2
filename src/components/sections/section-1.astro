@@ -1,0 +1,37 @@
+---
+import Badges from "../badges.astro";
+import GithubIcon from "../icons/GithubIcon.astro";
+import Linkidin from "../icons/Linkidin.astro";
+---
+<div class="flex max-md:px-10 md:px-10" id="inicio">
+    <div class="text-center gap-5 justify-start items-center">
+      <img class="h-12 animate-wiggle animate-duration-1000 animate-ease-in-out" src="images/brandvicdev.webp" alt="" />
+      <h1 class="text-4xl text-white font-bold text-left animate-fade-right animate-delay-800">
+        ¡Hola! Soy Víctor
+      </h1>
+
+      <h2 class="text-2xl text-left text-white font-extralight text-pretty animate-fade-right animate-delay-800 ">
+        Soy un desarrollador web con 4 años de experiencia, especializado en
+        la creación de páginas web utilizando WordPress, <span
+          class="text-[#E85125]">HTML</span
+        > ,<span class="text-[#1579B8]"> CSS </span> y <span
+          class="text-amber-500">JS</span
+        >. Me enfoco en desarrollar sitios funcionales y atractivos,
+        asegurando una experiencia de usuario fluida y adaptada a las
+        necesidades de cada cliente.
+      </h2>
+    </div>
+  </div>
+  <div class="flex gap-10 pt-5 max-sm:px-10 md:px-10 animate-fade-down animate-delay-800">
+   <Badges href="https://github.com/VictorGarcia2">
+    <GithubIcon/>
+  </Badges>
+    <Badges href="https://www.linkedin.com/in/victorgarciaa/">
+        <Linkidin/>
+ </Badges>
+
+<div class="border-2 border-yellow-500 h-auto rounded-md p-1 animate-bounce animate-delay-700 text-center"> 
+      <a class="text-white"
+      href="mailto:victrgarciaphoto@gmail.com">Disponible para trabajar 
+    </a></div>
+  </div>
