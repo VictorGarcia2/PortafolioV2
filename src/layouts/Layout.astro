@@ -20,13 +20,12 @@ const { title } = Astro.props;
     <meta name="description" content="Ofrezco desarrollo de páginas web profesionales, landing pages y sistemas de citas. Ubicado en Villahermosa. Contacta ahora.">
     <meta name="keywords" content="desarrollo web, páginas web, landing pages, sistemas de reservas, portafolio dev victor garcia">
   </head>
-  <body>
+  <body  class=" bg-white dark:bg-neutral-950">
     <div
-      class="absolute top-0 z-[-2] h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,#2E0042,rgba(255,255,255,0))]">
+      class="absolute top-0 z-[-2] h-screen w-full  bg-white dark:bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,#8b5cf6,#ffffff00)]  dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,#2E0042,#ffffff00)]">
     </div>
     <Header />
     <slot />
-   
   </body>
 </html>
 <style is:global>
@@ -36,7 +35,7 @@ const { title } = Astro.props;
 
   body {
     width: 100%;
-    background-color: #0a0a0a;
+
     display: flex;
     justify-content: center;
     flex-direction: column;
