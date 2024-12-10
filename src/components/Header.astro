@@ -18,11 +18,11 @@ import Darkmode from "./icons/darkmode.astro"
   const header = document.getElementById('scrolling');
   window.addEventListener('scroll', function() {
     if (window.scrollY > 50) {  // Ajusta este valor para que el cambio ocurra a tu gusto
-      header.classList.add('bg-purple-950', 'border-violet-100', 'shadow-lg', 'shadow-violet-600');
+      header.classList.add('bg-purple-950', 'border-violet-100', 'shadow-lg', 'shadow-violet-600', 'animate-jump-in', 'animate-once', 'animate-delay-100');
       header.classList.remove('bg-transparent', 'shadow-none');
     } else {
       header.classList.add('bg-transparent', 'shadow-none');
-      header.classList.remove('bg-purple-950', 'border-violet-100', 'shadow-lg','shadow-violet-600');
+      header.classList.remove('bg-purple-950', 'border-violet-100', 'shadow-lg','shadow-violet-600', 'animate-jump-in', 'animate-once', 'animate-delay-100');
     }
   });
 </script>
