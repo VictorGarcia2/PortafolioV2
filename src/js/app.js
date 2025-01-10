@@ -39,3 +39,20 @@ themeToggleBtn.addEventListener('click', function() {
     }
     
 });
+
+
+
+
+
+/* let video = document.querySelector('#video');
+function verificarVisibilidad(entries){
+    let entry = entries[0];
+    let target = entry.target;
+    if(entry.isIntersecting){
+        target.allow = "autoplay";
+    } else {
+        target.allow = "none";
+    }
+}
+let observer = new IntersectionObserver(verificarVisibilidad,{});
+observer.observe(video); */
